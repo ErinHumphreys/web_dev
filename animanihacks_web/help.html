@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name= "viewpoint" content="width=device-width">
+    <meta name= "description" content="We are SunBank, the greatest innovators in banking">
+    <meta mame= "keywords" content="SunBank, sunbank, online banking, bank">
+    <meta name= "author" content="Animanihacks">
+    <title> SUNBank | Open an Account</title>
+    <link rel="shortcut icon" types="logo.png" href="./img/logo.png"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./main.css"/>
+  </head>
+  <body class="accounts">
+    <header id="accounts_header">
+  		<!-- Header & Nav -->
+  		<nav class="navbar navbar-default">
+  			<div class="container-fluid">
+  				<div class="navbar-header">
+  					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+  						<span class="icon-bar"></span>
+  						<span class="icon-bar"></span>
+  						<span class="icon-bar"></span>
+  					</button>
+  					<div id="branding">
+  						<a class="navbar-brand" href="./index.html"><span class="highlight">Sun</span>Bank</a>
+  					</div>
+  				</div>
+  				<div class="collapse navbar-collapse" id="myNavbar">
+  					<ul class="nav navbar-nav">
+  						<li class="dropdown">
+  							<a class="dropdown-toggle" data-toggle="dropdown" href="#">Accounts
+  								<span class="caret"></span></a>
+  							<ul class="dropdown-menu">
+  								<li><a href="account_form.html">Open A New Account</a></li>
+  								<li><a href="deactivate_account.html">Deactivate Account</a></li>
+  								<li><a href="activate_account.html">Reactivate Account</a></li>
+  							</ul>
+  						</li>
+  						<li class="dropdown">
+  							<a class="dropdown-toggle" data-toggle="dropdown" href="#">Bank
+  								<span class="caret"></span></a>
+  							<ul class="dropdown-menu">
+  								<li><a href="payments.html">Once-off Payments</a></li>
+  								<li><a href="instaPay.html">Instant Payment</a></li>
+  								<li><a href="schedule_payments.html">Schedule Payment</a></li>
+  								<li><a href="add beneficiary.html">Add a beneficiary</a></li>
+  							</ul>
+  						</li>
+  						<li><a href="about_us.html">About Us</a></li>
+  						<li><a href="help.html">Get Help</a></li>
+  					</ul>
+  					<ul class="nav navbar-nav navbar-right">
+  						<li><a href="./account_form.html"><span class="glyphicon glyphicon-user"></span> Apply Now</a></li>
+  						<li><a href="./user.html"><span class="glyphicon glyphicon-log-in"></span> Log out</a></li>
+  					</ul>
+  				</div>
+  			</div>
+  		</nav>
+
+  		<section id="account-heading">
+  			<h1 id="accounts-title">Help Form</h1>
+
+
+  		</section>
+  	</header>
+
+<div class="account-container">
+  <form >
+    <div class="row">
+      <div class="col-25">
+        <label for="fname">First Name</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="lname">Last Name</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="country">Issue</label>
+      </div>
+      <div class="col-75">
+        <select id="country" name="country">
+          <option value="australia">Unable to process payment</option>
+          <option value="canada">Not adding beneficiary</option>
+          <option value="usa">Account does not want to activate</option>
+        </select>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="subject">Subject</label>
+      </div>
+      <div class="col-75">
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+      </div>
+    </div>
+    <div class="row">
+      <input type="submit" value="Submit">
+    </div>
+  </form>
+</div>
+  </body>
+</html>

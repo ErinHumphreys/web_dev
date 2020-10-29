@@ -1,0 +1,33 @@
+table {
+  width: 100%;
+}
+table th td{
+  border: 1px solid black;
+  padding: 1px;
+  background-color: yellowgreen;
+  color: #000;
+  border-collapse: collapse;
+  opacity: 0.95;
+}
+
+th, td {
+  padding: 10px;
+  text-align: center;
+}
+
+th {
+  background-color: yellowgreen;
+  color: black;
+}
+
+tr:nth-child(even) {
+  background-color: #e8e8e8;
+}
+
+tr:nth-child(odd) {
+  background-color: white;
+}
+
+td {
+  background-color: yellowgreen;
+}

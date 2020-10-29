@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name= "viewpoint" content="width=device-width">
+    <meta name= "description" content="We are SunBank, the greatest innovators in banking">
+    <meta mame= "keywords" content="SunBank, sunbank, online banking, bank">
+    <meta name= "author" content="Animanihacks">
+    <title> SunBank | Add Beneficiary</title>
+    <link rel="shortcut icon" types="logo.png" href="./img/logo.png"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./css"/>
+  </head>
+  <body>
+    <!--Navgation-->
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <div id="branding">
+          <a class="navbar-brand" href="#"><span class="highlight">Sun</span>Bank</a>
+          </div>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav">
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#">Personal
+                <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Wallet</a></li>
+                <li><a href="#">Account</a></li>
+                <li><a href="add beneficiary.html">Add Beneficiary</a></li>
+                <li><a href="#">Payments</a></li>
+                <li><a href="instaPay.html">Instant payments</a></li>
+                <li><a href="#">Loan</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#">Private
+                <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Wallet</a></li>
+                  <li><a href="#">Account</a></li>
+                  <li><a href="add beneficiary.html">Add Beneficiary</a></li>
+                  <li><a href="#">Payments</a></li>
+                  <li><a href="instaPay.html">Instant payments</a></li>
+                  <li><a href="#">Loan</a></li>
+                  <li><a href="#">Wealth Management</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#">Business
+                <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Wallet</a></li>
+                  <li><a href="#">Account</a></li>
+                  <li><a href="add beneficiary.html">Add Beneficiary</a></li>
+                  <li><a href="#">Payments</a></li>
+                  <li><a href="instaPay.html">Instant payments</a></li>
+                  <li><a href="#">Start my business</a></li>
+                  <li><a href="#">International banking</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Settings</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Page Title-->
+      <section id="main">
+        <div class="container">
+          <h2>Beneficiary Profile</h2>
+          <p>Here you can enter the details of a Beneficiary. Scehdule Payments to the Beneficiary and also remove the Beneficiary if needed </p></br>
+
+
+          <p>Select Beneficiary type:</p>
+          <input type="radio" name="Receipient" /> Primary
+          <input type="radio" name="Receipient" /> Contigent
+          <br>
+          <br>
+          <p> Name: </p><input type="text" name="username">
+          <br>
+          <br>
+          <p> Surname: </p><input type="text" name="usersurname">
+          <br>
+          <br>
+          <p> Account type: </p>
+            <select>
+              <option value = "Select">Select</option>
+              <option value="Beneficiary">Savings</option>
+              <option value="Beneficiary">Cheque</option>
+              <option value="Beneficiary">Savings and Current</option>
+              <option value="Beneficiary">Cheque and current</option>
+              <option value="Beneficiary">Investment</option>
+            </select>
+          <br>
+          <br>
+          <p>Branch code: </p><input type="text" name="branch_code">
+          <br>
+          <br>
+          <p>Account number: </p><input type="text" name="account_num">
+          <br>
+          <br>
+          <p>Contact Number: </p><input type="text" name="contact_num">
+          <br>
+          <br>
+          <br/>
+          <p>* My Statement Description (DR)</p>
+          <input type="text" name="Statement_dr" />
+          <br />
+          <br />
+          <p>** Beneficiary Statement Description (CR)</p>
+          <input type="text" name="Statement_cr" />
+          <br />
+          <br />
+          <p>Payment Notification</p>
+          <select>
+            <option value="Select">None</option>
+            <option value="Notification">SMS</option>
+            <option value="Notification">E-mail</option>
+            <option value="Notification">Post</option>
+            <option value="Notification">Pigeon</option>
+          </select>
+          <br>
+          <br>
+          <button>Submit Beneficiary details</button>
+          <br>
+          <br>
+
+          <a href="remove_beneficiary.html"><button>Remove existing Beneficiary</button></a>
+
+          <h2>Schedule Payments</h2>
+          <p>Scedule payments to the Beneficiary periodically</p>
+          <br><br/>
+
+          <form>
+            <input type="radio" name="Schedule" /> Make this a recurring payment?
+            <br />
+            <br />
+            <p>Payment Date:</P>
+            <input type="date" name="account_num" />
+            <br />
+            <br />
+            <p>Amount:</p>
+            <input type="number" name="amount" />
+          </form>
+          <br>
+          <br>
+          <button>Schedule Account</button>
+          <br>
+          <br>
+
+    <footer>
+      <p>SunBank&trade; 2018</p>
+    </footer>
+  </body>
+</html>
